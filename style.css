@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    font-family: 'Arial', sans-serif;
+    background-image: url(th.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    background-position: center;
+}
+.heading {
+    font-size: 6rem;
+  text-align: center;
+  margin: -9rem 0;
+    
+  color: beige;
+}
+    
+
+.stopwatchs{
+    padding: 100px 15px;
+    
+}
+
+.stopwatchs h2{
+    margin-bottom: 3rem;
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: rgba(137, 74, 74, 0.214);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+    transition: transform 0.5s;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 25px ;
+}
+
+#laps {
+    margin-top: 20px;
+    color: white;
+    text-align: left;
+}
+
+.lapTime {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media(max-width:991px) {
+    .heading{
+        font-size: 3rem;
+    }
+
+}
